@@ -1,6 +1,6 @@
 # Carvel Package Workflow (Experimental)
 
-The [Out of the Box Basic Supply Chain](ootb-supply-chain-basic.hbs.md) package can be configured to output Carvel Packages to a GitOps repository. This feature is experimental and can be used alongside the existing Out of the Box Basic workflow.
+The [Out of the Box Basic Supply Chain](ootb-supply-chain-basic.hbs.md) package can be configured to install alternate supply chains that output Carvel Packages to a GitOps repository. This feature is experimental and can be used alongside the existing Out of the Box Basic workflow.
 
 This document provides instructions for both an operator and developer on make use of the Carvel Package workflow.
 
