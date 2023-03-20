@@ -26,7 +26,7 @@ In `tap-values`, configure the [Out of the Box Basic Supply Chain](ootb-supply-c
         workflow_enabled: true
     ```
 
-2. (Optional) Set a GitOps subpath. This will determine the path in your GitOps repository to which Carvel Packages are written. See the [Carvel Package template](ootb-template-reference.hbs.md#carvel-package-experimental) for more information.
+2. (Optional) Set a GitOps subpath. This will determine the path in your GitOps repository to which Carvel Packages are written. Defaults to `""`. See the [Carvel Package template](ootb-template-reference.hbs.md#carvel-package-experimental) for more information.
 
     ```yaml
     ootb_supply_chain_basic:
@@ -35,7 +35,7 @@ In `tap-values`, configure the [Out of the Box Basic Supply Chain](ootb-supply-c
         gitops_subpath: path/to/my/dir
     ```
 
-3. (Optional) Set a name suffix. This will determine the suffix of the name of the Carvel Package. See the [Carvel Package template](ootb-template-reference.hbs.md#carvel-package-experimental) for more information.
+3. (Optional) Set a name suffix. Carvel Package names will be chosen using the template `<workload name>.<workload namespace>.<name suffix>`. Defaults to `tap`. See the [Carvel Package template](ootb-template-reference.hbs.md#carvel-package-experimental) for more information.
 
     ```yaml
     ootb_supply_chain_basic:
